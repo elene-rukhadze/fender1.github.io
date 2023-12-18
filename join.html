@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>join us - our social media and more</title>
+        <link rel="stylesheet" href="joinstyle.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <img class="logo" src="logo.png" alt="fender logo">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="latest.html">LATEST RELEASE</a></li>
+                    <li class="current"><a href="join.html">JOIN US</a></li>
+                    <li><a href="lessons.html">VIDEO LESSONS</a></li>
+                    <li><a href="shipping.html">SHIPPING</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+
+            <div class="part1">
+                <p>Stay tuned with us on social media! Let's keep the music conversation going - follow us for the
+                    latest updates, great talk, and a harmonious community of fellow enthusiasts.</p>
+                <div class="socials">
+                    <div class="first2">
+                        <a href="https://www.instagram.com/fender/?hl=en" target="_blank">
+                            <img src="./instagram.png" alt="instagram logo">
+                        </a>
+                        <a href="https://www.facebook.com/FenderEurope/?brand_redir=84437728562" target="_blank">
+                            <img src="./facebook.png" alt="facebook logo">
+                        </a>
+
+                    </div>
+                    <div class="second2">
+                        <a href="https://twitter.com/Fender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank"><img src="./twitter.png" alt="twitter logo"></a>
+                        <a href="https://www.tiktok.com/@fender?lang=en" target="_blank"><img src="./tiktok.png"
+                                alt="tiktok logo"></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="part2">
+                <form id="myForm">
+                    Name:<br>
+                    <input type="text" name="name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    What updates would you like to see from us?<br>
+                    <br>
+                    <textarea name="comment"></textarea><br>
+
+                    <p>Which Fender guitar model is your favorite?</p>
+                    <input type="radio" id="stratocaster" name="favGuitar" value="Stratocaster">
+                    <label for="stratocaster">Stratocaster</label><br>
+                    <input type="radio" id="telecaster" name="favGuitar" value="Telecaster">
+                    <label for="telecaster">Telecaster</label><br>
+                    <input type="radio" id="jazzmaster" name="favGuitar" value="Jazzmaster">
+                    <label for="jazzmaster">Jazzmaster</label><br><br>
+
+                    <p>What's your primary interest?</p>
+                    <input type="checkbox" id="newProducts" name="userInterests" value="NewProducts">
+                    <label for="newProducts">New product releases</label><br>
+                    <input type="checkbox" id="artistCollaborations" name="userInterests" value="ArtistCollaborations">
+                    <label for="artistCollaborations">Artist collaborations</label><br>
+                    <input type="checkbox" id="howToGuides" name="userInterests" value="HowToGuides">
+                    <label for="howToGuides">How-To Guides and Tips</label><br><br>
+
+                    <button class="sendbutton" type="button" onclick="sendEmail()">Send</button>
+                    <input class="resetbutton" type="reset" value="Reset">
+                </form>
+
+
+            </div>
+        </section>
+
+        <script src="email.js"></script>
+    </body>
+
+</html>
